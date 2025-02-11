@@ -1,0 +1,8 @@
+In this project, an Streamlit Application with AI Agent for Data Analysis has been built in Python with Phidata, 
+DuckDbAgent and Llama3.3 model (Open Source LLM). A "DuckDb Agent" in Phidata is a specialized agent that allows users to 
+analyze data using the DuckDB database engine within the Phidata platform, essentially enabling direct SQL queries and 
+data manipulation on datasets through the powerful analytical capabilities of DuckDB.
+
+After launching the Streamlit App, user needs to upload a csv file containing data. Then, they can type any question for analyzing 
+or getting some insight from the data and click on "Analyze" button and our Data Analyst Agent (created with phidata) with the help 
+of duckdb and LLM, will answer the question. 
