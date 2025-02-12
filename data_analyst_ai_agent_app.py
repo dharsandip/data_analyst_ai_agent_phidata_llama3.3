@@ -29,17 +29,20 @@ def analyze_data(query):
         structured_outputs=True,
     )
     
-    
+
     output = data_analyst_agent.run(
     #    "Please go through the data and tell me how many total Transactions are there. In your response, please only mention the answer and nothing else. ",
         query + ". In your response, please only mention the answer and nothing else",
         # "Show me a histogram of ratings. "
         # "Choose an appropriate bucket size but share how you chose it. "
         # "Show me the result as a pretty ascii diagram",
-        stream=True,
+        stream=False,
     )
+    
 
-    answer = ''.join(chunk.content for chunk in output)
+    answer = output.content
+
+#    answer = ''.join(chunk.content for chunk in output)
 
     return answer
 
