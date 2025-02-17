@@ -1,0 +1,5 @@
+phidata
+duckdb
+groq
+streamlit
+python-dotenv
